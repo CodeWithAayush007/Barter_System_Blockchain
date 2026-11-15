@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0B0E14;
+  background-image:
+    radial-gradient(circle at 15% 10%, rgba(217,143,78,0.07), transparent 40%),
+    radial-gradient(circle at 85% 0%, rgba(63,193,176,0.06), transparent 35%);
+  background-attachment: fixed;
+}
+
+/* Focus states — always visible for keyboard users */
+:focus-visible {
+  outline: 2px solid #3FC1B0;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0B0E14;
+}
+::-webkit-scrollbar-thumb {
+  background: #171C27;
+  border-radius: 8px;
+  border: 2px solid #0B0E14;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #21283A;
+}
+
+@layer components {
+  .glass {
+    @apply bg-ink-surface/70 backdrop-blur-xl border border-ink-border;
+  }
+  .glass-raised {
+    @apply bg-ink-raised/80 backdrop-blur-xl border border-ink-border;
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-copper text-ink font-display font-semibold px-5 py-2.5 transition-all duration-200 hover:bg-copper-400 active:scale-[0.98] hover:shadow-glow;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl glass text-parchment font-display font-medium px-5 py-2.5 transition-all duration-200 hover:border-ledger/40 active:scale-[0.98];
+  }
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl text-parchment-muted font-medium px-4 py-2 transition-colors duration-200 hover:text-parchment hover:bg-white/[0.04];
+  }
+  .card {
+    @apply glass rounded-xl2 transition-all duration-300;
+  }
+  .input-field {
+    @apply w-full rounded-lg bg-ink border border-ink-border px-4 py-2.5 text-parchment placeholder:text-parchment-faint focus:border-ledger/50 transition-colors duration-200;
+  }
+  .label {
+    @apply text-xs font-mono uppercase tracking-widest text-parchment-muted;
+  }
+}

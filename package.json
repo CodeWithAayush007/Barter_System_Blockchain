@@ -1,0 +1,15 @@
+{
+  "name": "trove-barter-dapp",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Trove \u2014 decentralized barter marketplace. Run everything with `npm run dev`.",
+  "scripts": {
+    "setup": "node scripts/launcher.js setup",
+    "dev": "node scripts/launcher.js dev",
+    "dev:demo": "node scripts/launcher.js dev --demo",
+    "test": "npm --prefix Blockchain test"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

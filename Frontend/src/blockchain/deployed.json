@@ -1,0 +1,20 @@
+{
+  "0x7a69": {
+    "name": "localhost",
+    "contracts": {
+      "BarterToken": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+      "Escrow": "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512",
+      "BarterAgreement": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+      "Reputation": "0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9"
+    }
+  },
+  "0xaa36a7": {
+    "name": "sepolia",
+    "contracts": {
+      "BarterToken": "0x4617069A7374a43ADc8cd428999f0af8877Bfe2e",
+      "Escrow": "0x33dfA17b0c74da73b51ce9D62EdA76F676E0606C",
+      "BarterAgreement": "0x8116b705C412239b9417401fe537F03bBd90729B",
+      "Reputation": "0x27e60A3c8d1D0deD1F07Fb27a7ff46F13e4890FF"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "network": "sepolia",
+  "chainId": "11155111",
+  "deployer": "0x765Aa156A693312470b5b59659bdEBbdA82AF97f",
+  "timestamp": "2026-11-15T13:43:02.489Z",
+  "contracts": {
+    "BarterToken": "0x4617069A7374a43ADc8cd428999f0af8877Bfe2e",
+    "Escrow": "0x33dfA17b0c74da73b51ce9D62EdA76F676E0606C",
+    "BarterAgreement": "0x8116b705C412239b9417401fe537F03bBd90729B",
+    "Reputation": "0x27e60A3c8d1D0deD1F07Fb27a7ff46F13e4890FF"
+  }
+}
